@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Jarod Mateus">
+        <meta name="description" content="Calculadora em JavaScript">
+        <!--
+            * Jarod Mateus - 2020
+            * jarodsim@gmail.com
+            * jarodmateus.herokuapp.com
+        -->
+        <link rel="stylesheet" href="style.css">
+        <title>Calculadora JS</title>
+    </head>
+
+    <body>
+        <div id="main">
+            <h1 style="color: #ffff; font-family: Arial, Helvetica, sans-serif; margin: 3px;">CalculadoraJS</h1>
+            <form name="form">
+                <input name="tela" id="tela">
+            </form>
+
+            <table>
+                <tr>
+                    <td><input value="CE" type="button" class="botao" onclick="limpar()"></td>
+                    <td><input value="<--" type="button" class="botao" onclick="voltar()"></td>
+                    <td><input value="/" type="button" class="botao" onclick="inseri('/')"></td>
+                    <td><input value="*" type="button" class="botao" onclick="inseri('*')"></td>
+                </tr>
+                <tr>
+                    <td><input value="7" type="button" class="botao" onclick="inseri(7)"></td>
+                    <td><input value="8" type="button" class="botao" onclick="inseri(8)"></td>
+                    <td><input value="9" type="button" class="botao" onclick="inseri(9)"></td>
+                    <td><input value="-" type="button" class="botao" onclick="inseri('-')"></td>
+                </tr>
+                <tr>
+                    <td><input value="4" type="button" class="botao" onclick="inseri(4)"></td>
+                    <td><input value="5" type="button" class="botao" onclick="inseri(5)"></td>
+                    <td><input value="6" type="button" class="botao" onclick="inseri(6)"></td>
+                    <td><input value="+" type="button" class="botao" onclick="inseri('+')"></td>
+                </tr>
+                <tr>
+                    <td><input value="1" type="button" class="botao" onclick="inseri(1)"></td>
+                    <td><input value="2" type="button" class="botao" onclick="inseri(2)"></td>
+                    <td><input value="3" type="button" class="botao" onclick="inseri(3)"></td>
+                    <td rowspan="5"><input style="height: 105px;" value="=" type="button" class="botao"
+                            onclick="resultado()"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input style="width: 105px;" value="0" type="button" class="botao"
+                            onclick="inseri(0)"></td>
+                    <td><input value="." type="button" class="botao" onclick="inseri('.')"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="botton">
+            <footer>
+                <p>Desenvolvido por Jarod Cavalcante - 2020</p>
+                <p><a href="https://jarodmateus.herokuapp.com" target="_blanck"> Visite meu portifólio</a></p>
+
+                <hr>
+            </footer>
+        </div>
+        <!--Comentarios-->
+        <div id="like">
+            <div class="fb-like" data-href="https://jogo-da-velhakkk.netlify.com/" data-width=""
+                data-layout="button" data-action="like" data-size="small" data-share="true"></div>
+        </div>
+        <div id="comentarios">
+            <div class="fb-comments" data-href="https://jogo-da-velhakkk.netlify.com/" data-width="100%"
+                data-numposts="5" data-colorscheme="dark"></div>
+        </div>
+
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v5.0">
+        </script>
+        <script src="script.js"></script>
+    </body>
+
+</html>
