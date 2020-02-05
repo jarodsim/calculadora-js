@@ -9,7 +9,7 @@ function inseri(num) {
 function resultado() {
     var expressao = document.form.tela.value;
     if ((expressao != null) || (expressao != '') || (expressao != undefined)) {
-        document.form.tela.value = eval(expressao);
+        document.form.tela.value = eval(expressao).toFixed(2);
     }
 }
 
