@@ -19,6 +19,7 @@ table {
     background-color: #45776a;
     color: #ffffff;
     border: none;
+    font-size: 30px;
 }
 
 
@@ -35,6 +36,7 @@ table {
     text-align: center;
     margin: auto;
     margin-top: 10%;
+    font-size: 20px;
 }
 
 #tela {
